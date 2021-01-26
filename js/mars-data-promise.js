@@ -13,6 +13,14 @@ const getMartianWeather = fetch(marsWeatherUrl, {
     redirect: 'follow'
 });
 
+const p = new Promise( (resolve, reject) => {
+    setTimeout(resolve('yay promise'), 2000);
+});
+
+p.then( (res) => {
+    console.log(res);
+});
+
 console.log(getMartianWeather);
 // why didn't we get stuff? Mark Watney needs to know if there's a storm!
 
