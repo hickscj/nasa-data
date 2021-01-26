@@ -7,27 +7,23 @@ const baseUrl = 'https://api.nasa.gov';
 const marsWeatherUrl = `${baseUrl}/insight_weather/?api_key=${apiKey}&feedtype=json&ver=1.0`;
 
 
+const p = new Promise( (resolve, reject) => {
+    resolve('promise fulfilled');
+});
+
 
 const getMartianWeather = fetch(marsWeatherUrl, {
     method: 'GET',
     redirect: 'follow'
 });
 
-const p = new Promise( (resolve, reject) => {
-    setTimeout(resolve('yay promise'), 2000);
-});
-
-p.then( (res) => {
-    console.log(res);
-});
-
-console.log(getMartianWeather);
+// console.log(getMartianWeather);
 // why didn't we get stuff? Mark Watney needs to know if there's a storm!
 
 getMartianWeather
     .then(response => response.json())
     .then(result => {
-        console.log(result)
+        console.log(result);
     })
     .catch(error => console.log(error));
 
