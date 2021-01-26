@@ -10,11 +10,27 @@
             width: 600px;
             margin: 0px auto;
         }
+        img.mars {
+            width: 75%;
+        }
     </style>
 </head>
 <body>
-    <h2>What is the weather on Mars?</h2>
-    <img src="./img/mars-landing-curiosity-artist-e1543073738523.jpeg" alt="mars">
-    <script src="./index.js"></script>
+    <h2>How's the weather on Mars?</h2>
+    <img class="mars" src="./img/mars-landing-curiosity-artist-e1543073738523.jpeg" alt="mars">
+
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://api.nasa.gov" target="_blank">NASA APIs</a></li>
+        <li><a href="https://documenter.getpostman.com/view/35240/SVmtxerV?version=latest#6c939b34-1e22-4acf-8d73-5c4bbf5ccd42" target="_blank">Postman Collection</a></li>
+        <li><a href="https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf" target="_blank">InSight Weather API Documentation</a></li>
+    </ul>
+
+    <!-- <script src="./js/mars-data-xhr.js"></script> -->
+
+    <script src="./js/mars-data-promise.js"></script>
+
+    <!-- <script src="./js/mars-data-async.js"></script> -->
+
 </body>
 </html>
