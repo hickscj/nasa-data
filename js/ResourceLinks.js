@@ -3,6 +3,7 @@ import React from 'react';
 export default function ResourceLinks() {
     return (
         <div>
+            <h2>Resources</h2>
             <ul>
                 <li><a href="https://github.com/hickscj/async-and-promises">Project Repo</a></li>
             </ul>
