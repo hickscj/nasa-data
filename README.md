@@ -1,5 +1,5 @@
 
-# Some examples for working with Promises and Async/Await
+# Playing with the NASA API
 
 ### For using the NASA API, you'll need to set up an API key here:
 https://api.nasa.gov/
