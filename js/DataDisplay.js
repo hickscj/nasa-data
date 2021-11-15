@@ -9,7 +9,6 @@ const DataDisplay = () => {
     const marsWeatherUrl = `https://api.nasa.gov/insight_weather/?api_key=${apiKey}&feedtype=json&ver=1.0`;
 
     useEffect(() => {
-        // this.waiter()
         fetch(marsWeatherUrl)
             .then(res => res.json())
             .then(res => {
